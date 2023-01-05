@@ -1,0 +1,747 @@
+@import url("https://fonts.googleapis.com/css?family=Notable");
+/*-----------------------------------------------------------------------------INDEX-------------------------------------------------------------------------------------------------*/
+.body-index video
+{
+    display: block;
+    margin: 60px auto 0 auto;
+    width: 60%;
+    height: auto;
+}
+.body-index figure
+{
+    flex-basis: 100%;
+}
+.body-index figcaption
+{
+    text-align: center;
+    margin-bottom: 60px;
+    margin-top: 10px;
+}
+.body-index main
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 3vh;
+}
+.body-index .main-section
+{
+    width: 75%;
+}
+.body-index article
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #2e2e2e99;
+    margin-bottom: 1vh;
+}
+.body-index .footer-in-section
+{
+    flex-basis: 100%;
+    background-color: #2e2e2e;
+    color:silver;
+    padding: 0.4vh 0 0.2vh 20px;
+}
+.body-index .headers-in-section
+{
+    font-size: 2em;
+    flex-basis: 100%;
+    background-color: #2e2e2e;
+    color:silver;
+    padding: 0.4vh 0 0.2vh 20px;
+}
+.body-index .images-blocks
+{
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+.body-index .img
+{
+    width: 15em;
+    height: auto;
+}
+.body-index p
+{
+    color:#cecece;
+    flex-basis: 65%;
+    font-size: 1.5em;
+    padding-left: 10px
+}
+.body-index #five-products
+{
+    flex-shrink: 0;
+    flex-grow: 0;
+    width: 300px;
+    box-sizing: border-box;
+    border: 0.7em #2e2e2e double;
+    background-color: #2e2e2e99;
+    justify-content: flex-start;
+    float:right;
+    display: flex;
+    flex-direction: column;
+    color:#c0c0c0;
+}
+.body-index h3
+{
+    width: auto;
+    text-align: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 5px;
+    font-size: 1.6em;
+    background-color: #414141
+}
+.body-index ol
+{
+    /*list-style: none;*/
+    margin-top: 0px;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3em;
+}
+.body-index #last-article {margin-bottom: 0;}
+/*----------------------------------------------------------------------------------PRODUCT---------------------------------------------------------------------------------------------------*/
+.body-product main
+{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas: 
+    "grid-sections"
+    "grid-aside";
+}
+.body-product #grid-section
+{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+    "article2 article1 article3"
+    "article2 article1 article3"
+    "article5 article1 article3"
+    "article5 article1 article4"
+    "article5 article1 article4"
+    "article5 article1 article4"
+    "article5 article6 article6";
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+.body-product .aside-grid
+{
+    background-color: #2e2e2eb9;
+    display: grid;
+    grid-template-areas: "figure1 figure2 figure3";
+    grid-gap: 4vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+}
+.body-product #first-figure {grid-area: figure1;}
+.body-product #second-figure {grid-area: figure2;}
+.body-product #third-figure {grid-area: figure3;}
+.body-product figure
+{
+    margin: auto;
+}
+.body-product .side-img
+{
+    width: 23vw;
+    height: auto;
+}
+.body-product figcaption
+{
+    padding-left: 5px;
+    color:#c0c0c0;
+    text-align: center;
+}
+.body-product .grid-item
+{
+    background-color: #2e2e2e;
+    color:#c0c0c0;
+    box-sizing: border-box;
+    border-top: 0.7rem double #FFC72B; /*using a mandatory color */
+    display: grid;
+}
+.body-product h3
+{
+    text-align: center;
+}
+.body-product p
+{
+    padding: 0 0.8vw 0.8vw 0.8vw ;
+    text-align: center;
+    vertical-align: text-bottom;
+}
+.body-product #grid-1{grid-area: article1;}
+.body-product #grid-2{grid-area: article2;}
+.body-product #grid-3{grid-area: article3;}
+.body-product #grid-4{grid-area: article4;}
+.body-product #grid-5{grid-area: article5;}
+.body-product #grid-6{grid-area: article6;}
+
+/*----------------------------------------------------------------------------------PRICING----------------------------------------------------------------------------------------------*/
+.body-pricing .main-content
+{
+    display: grid;
+    grid-template-areas: "table-content table-content table-content aside-content";
+}
+.body-pricing table
+{
+    grid-area: table-content;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+.body-pricing .aside-photos
+{
+    box-sizing: border-box;
+    border: 3px black double;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: aside-content;
+    background-color: #2e2e2eb9;
+}
+.body-pricing th
+{
+    padding-left: 3px;
+    padding-right: 3px;
+    box-sizing: border-box;
+    border: 1px black solid;
+    background-color: #2e2e2eee;
+    color:silver;
+}
+.body-pricing td
+{
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px black solid;
+    background-color: #2e2e2eee;
+    color:silver;
+}
+.body-pricing td:nth-child(1)
+{
+    text-align: left;
+    padding-left: 10px;
+    font-weight: bold;
+}
+.body-pricing .aside-img
+{
+    width: 23vw;
+    height: auto;
+}
+.body-pricing .image-link
+{
+    display: flex;
+    justify-content: center;
+}
+.body-pricing figcaption
+{
+    text-align: center;
+    color:#c0c0c0;
+}
+.body-pricing article
+{
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 20px;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    word-spacing: 6px;
+}
+/*----------------------------------------------------------------------------------CONTACT---------------------------------------------------------------------------------------------------*/
+.body-contact .contact
+{
+    /*display: grid;
+    grid-template-areas: 
+    "contact-form aside-pictures" ;*/
+    display: flex;
+    justify-content: space-between;
+}
+.body-contact .aside-flex
+{
+    /*grid-area:aside-pictures;*/
+    box-sizing: border-box;
+    border-color: black;
+    border-style: double;
+    border-width: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2e2e2eb9;
+}
+.body-contact .img-aside
+{
+    width: 18vw;
+    height: auto;
+}
+.body-contact .image-link
+{
+    display: flex;
+    justify-content: center;
+}
+.body-contact form
+{
+    /*rid-area: contact-form;*/
+    flex-basis: 100%;
+}
+.body-contact figcaption
+{
+    color:#c0c0c0;
+    text-align: center;
+}
+.body-contact #contact-info
+{
+    background-color: #FFC72B;
+    margin-bottom: 60px;
+    font-size: 1.4em;
+    color:#0e0a02;
+    text-align: center;
+    padding: 15px 30px;
+}
+/*-----------------------------------------------------------------------------MAIN----------------------------------------------------------------*/
+body
+{
+    background-color: rgb(255, 166, 0);
+    background-image: url("../img/background-alpha.png");
+    background-repeat: repeat;
+
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+h1
+{
+    font-family: Notable;
+    letter-spacing: 0.1em;
+}
+.logotype
+{
+    height: 170px;
+    width: auto;
+    margin-top: 10px;
+}
+.h1-and-checkbox
+{
+    display: flex;
+    justify-content: space-between;
+}
+.hamburger
+{
+    display:none;
+}
+h1
+{
+    margin: 0;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+h2
+{
+    margin-bottom: 0;
+    padding-bottom: 1vh;
+}
+h1, h2
+{
+    text-indent: 5px;
+}
+.highest-header
+{
+    background-color: #000000f0;
+    color:silver;
+    width: 100%;
+}
+.regular-nav-list
+{
+    margin: 0;
+    display: flex;
+    padding-left: 0;
+    list-style: none;
+    justify-content: space-around;
+    
+}
+.regular-nav
+{
+    background-color: #202020f0;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.hamburger-nav
+{
+    display: flex;
+    justify-content: center;
+}
+.hamburger
+{
+    z-index: 2;
+}
+.navigation-links, .hamburger
+{
+    font-size: 1.3em;
+    text-decoration: none;
+    color:silver;
+}
+.navigation-links:hover
+{
+    color:white;
+}
+.navigation-links:active
+{
+    color:lightgray;
+}
+#cookie-statement
+{
+    position: fixed;
+    text-align: center;
+    right: 0;
+    bottom: 0;
+    color:#FFF;
+    opacity: 0.5;
+    background-color: #FA0;
+    padding: 1em;
+    z-index: 9999;
+}
+#bottom-footer
+{
+    color: #ffc14f;
+    background-color: #360505;
+    padding: 1vh 1vh 1vh 0;
+    margin-top: 10px;
+}
+.nav-block
+{
+    visibility: hidden; /*this way it also works as a some space before content*/
+}
+.toggler
+{
+    visibility: hidden;
+}
+@media ((min-width: 481px) and (max-width: 1279px))
+{
+    /*------------------------------------------------------INDEX Tablet----------------*/
+    .body-index figure
+    {
+        order: 2;
+    }
+    .body-index video
+    {
+        margin: 5vh auto 0 auto;
+        width: 70%;
+        height: auto;
+    }
+    .body-index figcaption
+    {
+        margin-bottom: 4vh;
+    }
+    .body-index .main-section
+    {
+        order:3;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .body-index #five-products
+    {
+        margin-top: 10px;
+        order: 1;
+        width: 100%;
+        float:none;
+    }
+    .body-index article
+    {
+        justify-content: space-between;
+    }
+    .body-index #last-article 
+    {
+        order:1;
+        margin-bottom: 1vh;
+    }
+    .body-index #middle-article {order:2;}
+    .body-index #first-article
+    {
+        order:3;
+        margin-bottom: 0;
+    }
+    .body-index .images-blocks
+    {
+        order:2;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        flex-basis: 25%;
+        flex-wrap: nowrap;
+        width: 20vw;
+        height: auto;
+        margin-left: 45px;
+    }
+    .body-index p
+    {
+        flex-basis: 60%;
+        order:3;
+        font-size: 1.2rem;
+        flex-wrap: nowrap;
+        padding-left: 20px;
+    }
+    .body-index .img
+    {
+        width: 11em;
+        height: auto;
+    }
+    .body-index .footer-in-section
+    {
+        order:4;
+    }
+    /*------------------------------------------------------PRODUCT Tablet----------------*/
+    .body-product #grid-section
+    {
+    grid-gap: 15px;
+    grid-template-areas:
+    "article1 article2"
+    "article1 article2"
+    "article3 article2"
+    "article3 article5"
+    "article3 article5"
+    "article3 article5"
+    "article6 article6"
+    "article6 article6";
+    }
+    .body-product #grid-4{display: none;}
+    .body-product .aside-grid
+    {
+    grid-template-areas: "figure1 figure2";
+    }
+    .body-product #third-figure {display: none;}
+    /*------------------------------------------------------PRICING Tablet----------------*/
+    .body-pricing .main-content
+    {
+        grid-template-areas: 
+        "table-content"
+        "aside-content";
+    }
+    .body-pricing #first-figure {display: none;}
+    .body-pricing .aside-photos
+    {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    /*------------------------------------------------------CONTACT Tablet----------------*/
+    .body-contact form
+    {
+        flex-basis: 66%;
+    }
+    .body-contact .aside-flex
+    {
+        flex-basis: 33%
+    }
+}
+
+@media (max-width: 480px)
+{
+    /*----------------------------------MAIN----*/
+    /*mobile nav*/
+    .nav-block
+    {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+        visibility: visible;
+        flex-basis: 100%;
+    }
+    .ul-block
+    {
+        display: none;
+        list-style-type: none;
+        text-align: center;
+        padding-left: 0;
+        margin-top: 0;
+    }
+    .li-block
+    {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .toggler
+    {
+        position:absolute;
+        top:0;
+        right: 0;
+        visibility: visible;
+        width: 50px;
+        height: 50px;
+        opacity: 0;
+        z-index: 2;
+    }
+    .toggler:checked~ .ul-block
+    {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background-color: #2e2e2e;
+        color: #c0c0c0;
+        text-transform: uppercase;
+    }
+    .hamburger
+    {
+        display:block;
+        font-size: 3em;
+        flex-basis: 60px;
+        z-index: 1;
+    }
+    /*end of mob nav*/
+    .logotype
+    {
+        display: none;
+    }
+    .regular-nav
+    {
+        display: none;
+    }
+    h1
+    {
+        font-size: 1.5em;
+    }
+    h2
+    {
+        font-size: 1em;
+    }
+    /*-----------------------------------INDEX mobile-----*/
+        /*I don't know do I need to include a video or not in my mobile version
+        since there is a size limit of a video for mobile(which means that we
+        must have a video) but at the same time there is no video
+        in a template(grid), so I will include it, just in case
+    video
+    {
+        width: 90%;
+        height: auto;
+        margin-top: 2vh;
+    }*/
+    .body-index #five-products
+    {
+        order:1;
+        flex-basis: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .body-index h3
+    {
+        font-size: 1.2em;
+    }
+    .body-index .list-aside
+    {
+        font-size: 0.9em;
+        line-height: 1.2em;
+    }
+    .body-index figure
+    {
+        order:2;
+        display: none;
+    }
+    .body-index figcaption
+    {
+        margin-bottom: 2vh;
+        font-size: 0.8em;
+    }
+    .body-index .main-section
+    {
+        order:3;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .body-index #last-article 
+    {
+        order:1;
+        margin-bottom: 1vh;
+    }
+    .body-index #middle-article {order:2;}
+    .body-index #first-article
+    {
+        order:3;
+        margin-bottom: 0;
+    }
+    .body-index .headers-in-section
+    {
+        order:1;
+        text-align: center;
+        font-size: 1.8em;
+        padding-left: 0;
+    }
+    .body-index .footer-in-section
+    {
+        order:3;
+    }
+    .body-index .images-blocks
+    {
+        order:2;
+        margin: auto;
+        padding-bottom: 10px;
+    }
+    .body-index p
+    {
+        flex-basis: 100%;
+        text-align: center;
+        margin: 10px auto;
+        order:2;
+        padding-left: 1vw;
+        padding-right: 1vw;
+        font-size: 1.2em;
+    }
+    .body-index article
+    {
+        display: flex;
+    }
+    /*----------------------------------PRODUCT mobile----*/
+    .body-product #grid-section
+    {
+    grid-gap: 15px;
+    grid-template-areas:
+    "article5"
+    "article3"
+    "article2"
+    "article1";
+    }
+    .body-product #grid-4{display: none;}
+    .body-product #grid-6{display: none;}
+
+    .body-product .aside-grid
+    {
+    grid-template-areas: 
+    "figure1"
+    "figure2"
+    "figure3";
+    }
+    .body-product main
+    {
+        margin-top: 5px;
+    }
+    /*----------------------------------PRICING mobile----*/
+    .body-pricing article {display: none;}
+    .body-pricing .main-content
+    {
+        grid-gap:5vh;
+        grid-template-areas: 
+        "table-content"
+        "aside-content";
+        margin-top: 5px;
+    }
+    .body-pricing table
+    {
+        font-size: 0.7em;
+    }
+    /*----------------------------------CONTACT mobile----*/
+    .body-contact main
+    {
+        flex-direction: column;
+    }
+    .body-contact .aside-flex
+    {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .body-contact #contact-info
+    {
+        font-size: 1rem;
+        margin-top: 10px;
+    }
+    /*on a template all the items in the aside is a column, so I left it as a column*/
+}
